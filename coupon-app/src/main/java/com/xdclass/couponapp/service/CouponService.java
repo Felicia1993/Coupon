@@ -23,7 +23,7 @@ public class CouponService {
     private IUserService iUserService;
     public String query() {
         TCouponExample example = new TCouponExample();
-        example.createCriteria().andCodeEqualTo("004515d96-49bd-4cce-83e3-08302b9aa084").andStatusEqualTo(0)
+        example.createCriteria().andCodeEqualTo("004515d96-49bd-4cce-83e3-git remote rm origin08302b9aa084").andStatusEqualTo(0)
                 .andAchieveAmountBetween(100,1000);
         List<TCoupon> tCou = tCouponMapper.selectByExample(example);
         return tCou.get(0).toString();
